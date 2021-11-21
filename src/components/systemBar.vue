@@ -1,7 +1,5 @@
 <template>
-<div>
   <v-system-bar 
-    color="grey" 
     text-center>
     <v-row
       v-row
@@ -10,5 +8,4 @@
       ><span>v-system-bar</span>
     </v-row> 
   </v-system-bar>
-</div>
 </template>

@@ -3,7 +3,7 @@
     <systemBar/>
     <appBar/>
     <navigation/>
-    <footerr/>
+    <Footer/>
     <bottomNavigation/>
   </div>
 </template>
@@ -13,7 +13,7 @@
   import systemBar from '../components/systemBar'
   import navigation from '../components/navigation'
   import appBar from '../components/appBar'
-  import Footerr from '../components/Footerr'
+  import  Footer  from "../components/Footer"
   import bottomNavigation from '../components/bottomNavigation'
 
 
@@ -23,7 +23,7 @@
     components: {
       systemBar,
       appBar,
-      Footerr,
+      Footer,
       navigation,
       bottomNavigation,
     },

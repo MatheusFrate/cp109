@@ -3,7 +3,6 @@
 </template>
 
 <script>
-  import navigation from '../components/navigation'
   import Af from '../components/Af'
 
 
@@ -11,9 +10,7 @@
     name: 'Home',
 
     components: {
-      // HelloWorld,
       Af,
-      navigation,
     },
   }
 </script>

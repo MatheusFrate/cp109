@@ -1,5 +1,4 @@
 <template>
-    <div>
         <v-card height="81vh">   
         <v-navigation-drawer absolute permanent left>
             <v-container fill-height>
@@ -14,5 +13,4 @@
                 </v-card-text>
             </v-container>
         </v-card>
-    </div> 
 </template>
