@@ -1,16 +1,31 @@
 <template>
-        <v-card height="81vh">   
-        <v-navigation-drawer absolute permanent left>
-            <v-container fill-height>
-                <v-card-text>
-                    <center>v-navigation-drawer</center>
-                </v-card-text>
-            </v-container>
-        </v-navigation-drawer>
-        <v-container fill-height>
-                <v-card-text>
-                    <center>v-content</center>
-                </v-card-text>
-            </v-container>
-        </v-card>
+    <v-navigation-drawer absolute permanent left>
+      <v-container>
+        <center>
+          <v-btn icon x-large>
+            <router-link to="/" tag="button"><v-icon>mdi-cart</v-icon> product type 1</router-link>
+          </v-btn>
+        </center>
+        <v-spacer> </v-spacer>
+        <center>
+          <v-btn icon x-large>
+            <router-link to="/ProductType2" tag="button"><v-icon>mdi-cart</v-icon> product type 2</router-link>
+          </v-btn>
+        </center>
+        <v-spacer> </v-spacer>
+        <center>
+          <v-btn icon x-large>
+            <router-link to="/ProductType3" tag="button"><v-icon>mdi-cart</v-icon> product type 3</router-link>
+          </v-btn>
+        </center>
+        <v-spacer> </v-spacer>
+        <center>
+          <v-btn icon x-large>
+            <router-link to="/ProductType4" tag="button"><v-icon>mdi-cart</v-icon> product type 4</router-link>
+          </v-btn>
+        </center>
+      </v-container>
+    </v-navigation-drawer>
 </template>
+
+
