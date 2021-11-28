@@ -1,0 +1,53 @@
+<template>
+  <v-app-bar dense dark>
+    <v-menu>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn icon v-bind="attrs" v-on="on">
+          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        </v-btn>
+      </template>
+
+      <v-list>
+        <v-list-item
+          v-for="(n, i) in $store.state.products"
+          :key="i"
+          @click="() => {}"
+          :to="{ path: n.route }"
+        >
+          <v-list-item-title>{{ n.description }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+
+    <v-toolbar-title>Page title</v-toolbar-title>
+    <v-spacer></v-spacer>
+    <center>
+      <v-toolbar-items>
+        <center>
+          <v-btn text>
+            <v-icon>mdi-cart</v-icon>
+            <router-link to="/" tag="button"> Product type 1 </router-link>
+          </v-btn>
+        </center>
+        <center>
+          <v-btn text>
+            <v-icon>mdi-cart</v-icon>
+            <router-link to="/ProductType2" tag="button">Product type 2</router-link>
+          </v-btn>
+        </center>
+        <center>
+          <v-btn text>
+            <v-icon>mdi-cart</v-icon>
+            <router-link to="/ProductType3" tag="button">Product type 3</router-link>
+          </v-btn>
+        </center>
+        <center>
+          <v-btn text>
+            <v-icon>mdi-cart</v-icon>
+            <router-link to="/ProductType4" tag="button">Product type 4</router-link>
+          </v-btn>
+        </center>
+      </v-toolbar-items>
+    </center>
+  </v-app-bar>
+</template>
