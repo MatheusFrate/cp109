@@ -19,7 +19,7 @@
       </v-list>
     </v-menu>
 
-    <v-toolbar-title>Page title</v-toolbar-title>
+    <v-toolbar-title></v-toolbar-title>
     <v-spacer></v-spacer>
     <center>
       <v-toolbar-items>
