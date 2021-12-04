@@ -14,7 +14,7 @@
                   </v-img>
 
                   <v-card-actions>
-                    <v-btn outlined rounded text v-if="n.amount <= 1"> Comprar  </v-btn>
+                    <v-btn outlined rounded text v-if="n.amount >= 1" @click="comprar(n.Id)"> Comprar  </v-btn>
                     <v-btn outlined rounded text v-else > Indisponivel</v-btn>
                     <v-btn outlined rounded text> Abrir </v-btn>
                   </v-card-actions>
@@ -44,6 +44,11 @@ export default {
     itemId: Number,
   },
 
+  methods: {
+    comprar (id) {
+      this.$store.commit('ReduceAmount', id)
+    },
+  },
   computed: {
     myProducts () {
       return this.$store.state.products

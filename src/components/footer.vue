@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'bottomNavigation',
+  name: 'Footer',
 
   computed: {
     mostbought() {
