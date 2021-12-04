@@ -2,7 +2,7 @@
   <v-footer padless>
     <v-col class="text-center">
        Produto mais comprado:
-      {{mostbought.description}}<br>
+      {{mostbought.name}}<br>
        Tipo:
        {{mostbought.Typeid}}
        Quantidade

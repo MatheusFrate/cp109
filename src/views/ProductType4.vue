@@ -1,8 +1,8 @@
 <template>
 <div>
   <systemBar> </systemBar>
-  <produtos itemId=4>
-  </produtos>
+  <center> <h2> PRODUTOS ESGOTADOS </h2></center>
+  <produtos/>
 </div>
 </template>
 <script>
@@ -14,12 +14,15 @@ export default {
 
   computed: {
       myProducts () {
-        return this.$store.state.products
+        return this.$store.state.outOfStock
       }
     },
     components: {
       produtos,
       systemBar
     },
+  created() {
+    this.$store.dispatch("getPosts");
+  }
 };
 </script>
