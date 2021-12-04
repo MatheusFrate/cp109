@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card height="85vh">
+    <v-card height="81vh">
       <navigation />
       <v-container fill-height="10vh">
         <v-card class="mx-auto" max-width="800" max-height="80vh" color="grey">
@@ -25,6 +25,7 @@
         </v-card>
       </v-container>
     <Footer />
+    <bottomNavigation />
     </v-card>
   </div>
 </template>
@@ -50,9 +51,6 @@ export default {
     amount() {
       return this.$store.getters.getLowAmount
     },
-    mostbought() {
-      return this.$store.getters.getMostBought
-    }
   },
   components: {
     systemBar,

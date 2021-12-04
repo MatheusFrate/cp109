@@ -41,9 +41,6 @@ export default new Vuex.Store({
       })      
       return MostBoughtProduct;
     }
-    // ReduceAmount(state, id){
-    //   return state.products[id-1].amount--
-    // }
   },
   modules: {
   }
