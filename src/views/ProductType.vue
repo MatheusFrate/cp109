@@ -1,7 +1,7 @@
 <template>
 <div>
   <systemBar> </systemBar>
-  <produtos itemId=2>
+  <produtos itemId=1>
   </produtos>
 </div>
 </template>
@@ -12,7 +12,7 @@
 
 
   export default {
-    name: 'productType2',
+    name: 'productType1',
     
     computed: {
       myProducts () {

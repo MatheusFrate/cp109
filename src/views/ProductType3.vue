@@ -1,23 +1,17 @@
 <template>
-  <div>
-    <v-card height="95vh">
-      <navigation />
-      <produtos3/>
-    </v-card>
-  </div>
+  <produtos itemId=3>
+  </produtos>
 </template>
 
 <script>
-  import produtos3 from '../components/produtos3'
-  import navigation from "../components/navigation";
+  import produtos from '../components/produtos'
 
 
   export default {
     name: 'productType3',
 
     components: {
-      produtos3,
-      navigation
+      produtos,
     },
   }
 </script>
