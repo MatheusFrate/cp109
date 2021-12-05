@@ -19,13 +19,13 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Screeshot Product Type 1:
-![image](https://user-images.githubusercontent.com/55608318/143782122-670d80df-0676-49bd-b5fb-82f7ce4ce74c.png)
+![image](https://user-images.githubusercontent.com/55608318/144725448-c2ae34ac-1386-4cbd-94c5-bd35710659f3.png)
 
 ### Screeshot Product Type 2:
-![image](https://user-images.githubusercontent.com/55608318/143782137-bcd20468-1be4-461b-bb26-b4fa30ecfad9.png)
+![image](https://user-images.githubusercontent.com/55608318/144725450-b5bbaffa-440b-49aa-9469-9ed6ab7186e0.png)
 
 ### Screeshot Product Type 3:
-![image](https://user-images.githubusercontent.com/55608318/143782140-a1d811b0-7004-4620-95d9-5f14ab36a899.png)
+![image](https://user-images.githubusercontent.com/55608318/144725474-7bedb140-03ad-4a93-8c73-164ce838fec1.png)
 
 ### Screeshot Product Type 4:
-![image](https://user-images.githubusercontent.com/55608318/143782144-a99ec4c7-af11-4090-94df-2909c0f0bc4d.png)
+![image](https://user-images.githubusercontent.com/55608318/144725456-92d71502-1538-41b5-8dcb-3e65ce6a9da4.png)
