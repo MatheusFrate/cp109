@@ -14,7 +14,7 @@
           @click="() => {}"
           :to="{ path: n.route }"
         >
-          <v-list-item-title>{{ n.description }}</v-list-item-title>
+          <v-list-item-title>{{ n.name }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -44,7 +44,7 @@
         <center>
           <v-btn text>
             <v-icon>mdi-cart</v-icon>
-            <router-link to="/ProductType4" tag="button">Product type 4</router-link>
+            <router-link to="/ProductType4" tag="button">Produtos Esgotados</router-link>
           </v-btn>
         </center>
       </v-toolbar-items>

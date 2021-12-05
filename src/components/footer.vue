@@ -3,8 +3,6 @@
     <v-col class="text-center">
        Produto mais comprado:
       {{mostbought.name}}<br>
-       Tipo:
-       {{mostbought.Typeid}}
        Quantidade
       {{mostbought.bought}}
     </v-col>

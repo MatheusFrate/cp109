@@ -1,11 +1,8 @@
 <template>
   <v-system-bar 
     text-center>
-    <v-row
-      v-row
-      align="center"
-      justify="center"
-      ><span>v-system-bar</span>
-    </v-row> 
+     <v-col class="text-center">
+     <span>Compre</span>
+     </v-col> 
   </v-system-bar>
 </template>

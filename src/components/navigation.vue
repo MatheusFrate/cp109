@@ -21,7 +21,7 @@
         <v-spacer> </v-spacer>
         <center>
           <v-btn icon x-large>
-            <router-link to="/ProductType4" tag="button"><v-icon>mdi-cart</v-icon> product type 4</router-link>
+            <router-link to="/ProductType4" tag="button"><v-icon>mdi-cart</v-icon> Produtos Esgotados</router-link>
           </v-btn>
         </center>
       </v-container>

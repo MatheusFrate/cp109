@@ -1,12 +1,17 @@
 <template>
   <div>
-    <v-card min-height="81vh" height="100vh">
+    <v-card min-height="81vh" fill-height >
       <navigation />
-      <v-container fill-height="10vh">
-        <v-card class="mx-auto" max-width="1000" max-height="80vh" color="grey">
+      <div  v-if="getProductbyType.length === 0" class="text-center" min-height="80vh" >
+        <v-card class="mx-auto" min-height="80vh"  color="white">
+          <v-card-text><h1> Não foi encontrado nenhum produto para essa categoria</h1></v-card-text>
+        </v-card>
+      </div>
+      <v-container v-else fill-height>
+        <v-card class="mx-auto" max-width="1000" color="grey">
           <v-container fluid>
             <v-row dense >
-              <v-col v-for="(n, i) in compare === false ? outOfStock : getProductbyType " :key="i" cols="12" sm="6" no-gutters>
+              <v-col v-for="(n, i) in getProductbyType " :key="i" cols="12" sm="6" no-gutters>
                 <v-card width="500" height="20vh">
                   <v-img>
                     <v-card-title v-text="n.name"> </v-card-title>
@@ -24,9 +29,9 @@
           </v-container>
         </v-card>
       </v-container>
+    </v-card>
     <Footer />
     <bottomNavigation />
-    </v-card>
   </div>
 </template>
 
@@ -41,13 +46,13 @@ export default {
   name: "produtos",
 
   props: {
-    itemId: Number,
-    compare: Boolean,
+    productType: String,
+    compare: String,
   },
 
   methods: {
     comprar (id) {
-      this.$store.commit('ReduceAmount', id)
+      this.$store.commit('ReduceAmount', {id, productType: this.productType})
     },
   },
   computed: {
@@ -60,8 +65,8 @@ export default {
     amount() {
       return this.$store.getters.getLowAmount
     },
-    getProductbyType() {
-      return this.$store.getters.getProductbyType(this.itemId);
+    getProductbyType() { 
+      return this.$store.getters.getProductbyType(this.productType);
     }
   },
   components: {

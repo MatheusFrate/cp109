@@ -1,7 +1,7 @@
 <template>
 <div>
   <systemBar> </systemBar>
-  <produtos itemId=1 compare=true>
+  <produtos productType=1>
   </produtos>
 </div>
 </template>

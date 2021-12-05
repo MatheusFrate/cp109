@@ -1,7 +1,7 @@
 <template>
 <div>
   <systemBar> </systemBar>
-  <produtos itemId=3 compare=true>
+  <produtos productType=3>
   </produtos>
 </div>
 </template>
@@ -13,15 +13,18 @@
 
   export default {
     name: 'productType3',
+    created: false,
 
-   computed: {
-      myProducts () {
-        return this.$store.state.products
-      } 
-    },
     components: {
       produtos,
       systemBar
+    },
+    created() {
+    if(this.$store.state.created == false)
+    {
+      this.$store.dispatch("getProducts");
+      this.$store.commit("setCreated");
     }
+  }
   }
 </script>

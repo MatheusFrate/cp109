@@ -2,7 +2,7 @@
 <div>
   <systemBar> </systemBar>
   <center> <h2> PRODUTOS ESGOTADOS </h2></center>
-  <produtos/>
+  <produtos productType=4 />
 </div>
 </template>
 <script>
@@ -14,7 +14,7 @@ export default {
 
   computed: {
       myProducts () {
-        return this.$store.state.outOfStock
+        return this.$store.state.moreProducts
       }
     },
     components: {
@@ -22,7 +22,11 @@ export default {
       systemBar
     },
   created() {
-    this.$store.dispatch("getPosts");
+    if(this.$store.state.created == false)
+    {
+      this.$store.dispatch("getProducts");
+      this.$store.commit("setCreated");
+    }
   }
 };
 </script>
