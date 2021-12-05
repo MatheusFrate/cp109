@@ -42,7 +42,7 @@ export default new Vuex.Store({
           Id: product.id + 8,
           name: product.name,
           price: product.price,
-          amount: 30,
+          amount: (Math.random()*10).toFixed(),
           bought: 0
         })
       });
